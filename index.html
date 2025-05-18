@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listening Stations | ACTG Apeldoorn</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    <meta name="description" content="Information about radio monitoring locations in the region by ACTG Apeldoorn">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">ACTG <span>Apeldoorn</span></div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#stations">Stations</a></li>   
+                <li><a href="#about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Listening Stations</h1>
+            <p class="subtitle">Real-time monitoring of radio frequencies in the region</p>
+            <a href="#stations" class="hero-btn">Explore Stations</a>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section id="stations" class="section">
+            <h2 class="section-title">Our Stations</h2>
+            <div class="listening-stations">
+                <div class="card compact-card" data-aos="fade-up">
+                    <div class="card-header">
+                        <div class="card-title">Hoenderloo</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="antenna-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="height">102 Meters NAP</div>
+                        <div class="details">
+                            <p class="details-item"><i class="fas fa-arrows-alt-v"></i> Antenna height: 4 meters</p>
+                            <p class="details-item"><i class="fas fa-plug"></i> Powered by ACTG.nl</p>
+                            <p class="details-item status-container">Status: <span class="status online">Online</span></p>
+                        </div>
+                        <a href="https://hoenderloo.omroepapeldoorn.nl/" class="btn">Listen Now</a>
+                    </div>
+                </div>
+                
+                <div class="card compact-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card-header">
+                        <div class="card-title">Uddel</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="antenna-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="height">Soon</div>
+                        <div class="details">
+                            <p class="details-item"><i class="fas fa-arrows-alt-v"></i> Antenna height: Soon</p>
+                            <p class="details-item"><i class="fas fa-plug"></i> Powered by ACTG.nl</p>
+                            <p class="details-item status-container">Status: <span class="status planned">Coming Soon</span></p>
+                        </div>
+                        <a href="#" class="btn disabled" tabindex="-1" aria-disabled="true">Coming Soon</a>
+                    </div>
+                </div>
+                
+                <div class="card compact-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card-header">
+                        <div class="card-title">Apeldoorn</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="antenna-icon"><i class="fas fa-broadcast-tower"></i></div>
+                        <div class="height">Soon</div>
+                        <div class="details">
+                            <p class="details-item"><i class="fas fa-arrows-alt-v"></i> Antenna height: Soon</p>
+                            <p class="details-item"><i class="fas fa-plug"></i> Powered by ACTG.nl</p>
+                            <p class="details-item status-container">Status: <span class="status planned">Coming Soon</span></p>
+                        </div>
+                        <a href="#" class="btn disabled" tabindex="-1" aria-disabled="true">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2 class="section-title">About Our Network</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Our network of SDR (Software Defined Radio) listening stations monitors radio frequencies across the region. These stations help us gather data on signal coverage, interference patterns, and broadcast quality.</p>
+                    <p>Each station is equipped with advanced antennas and digital receivers, allowing for precise monitoring and analysis of the radio spectrum.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Stations</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Monitoring</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">65 - 108</span>
+                        <span class="stat-label">Bandwidth</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2023-<span id="currentYear"></span> Powered by ACTG Apeldoorn | All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+    // Optimize JavaScript by running it immediately
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
